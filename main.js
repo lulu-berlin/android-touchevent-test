@@ -14,5 +14,10 @@ $(document).ready(function () {
 
     });
 
+    $('canvas').on('touchmove', function (e) {
+        e.preventDefault();
+        $('#console').text('touch move!');
+    });
+
     console.log('hello world');
 });
