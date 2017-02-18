@@ -11,7 +11,6 @@ $(document).ready(function () {
     $('canvas').on('touchstart', function (e) {
         e.preventDefault();
         $('#console').text('touch start!');
-
     });
 
     $('canvas').on('touchmove', function (e) {
@@ -19,5 +18,9 @@ $(document).ready(function () {
         $('#console').text('touch move!');
     });
 
-    console.log('hello world');
+    $('canvas').on('touchend', function (e) {
+        e.preventDefault();
+        $('#console').text('touch end!');
+    });
+
 });
