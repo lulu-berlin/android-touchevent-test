@@ -9,7 +9,7 @@ $(document).ready(function() {
     var h = canvas.height;
 
     function eventToCanvasCoords(e) {
-        return [e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop];
+        return [e.targetTouches[0].clientX - canvas.offsetLeft, e.targetTouches[0].clientY - canvas.offsetTop];
     }
 
     $('canvas').on('touchstart', function(e) {
