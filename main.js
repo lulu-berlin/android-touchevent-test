@@ -1,4 +1,4 @@
-(function () {
+$(document).ready(function () {
     "use strict";
 
     var canvas = document.getElementById('myMandala');
@@ -15,4 +15,4 @@
     });
 
     console.log('hello world');
-})();
+});
